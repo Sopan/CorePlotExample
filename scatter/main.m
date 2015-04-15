@@ -2,8 +2,7 @@
 //  main.m
 //  scatter
 //
-//  Created by Kripa on 22/08/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Sopan Shekhar Sharma. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

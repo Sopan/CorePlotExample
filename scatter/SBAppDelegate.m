@@ -2,15 +2,12 @@
 //  SBAppDelegate.m
 //  scatter
 //
-//  Created by Kripa on 22/08/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Sopan Shekhar Sharma. All rights reserved.
 //
 
 #import "SBAppDelegate.h"
 
-#import "SBFirstViewController.h"
-
-#import "SBSecondViewController.h"
+#import "SBViewController.h"
 
 @implementation SBAppDelegate
 
@@ -28,10 +25,8 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[SBFirstViewController alloc] initWithNibName:@"SBFirstViewController" bundle:nil] autorelease];
-    UIViewController *viewController2 = [[[SBSecondViewController alloc] initWithNibName:@"SBSecondViewController" bundle:nil] autorelease];
-    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    UIViewController *viewController1 = [[[SBViewController alloc] initWithNibName:@"SBViewController" bundle:nil] autorelease];
+    self.tabBarController = [[[UINavigationController alloc] initWithRootViewController:viewController1] autorelease];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

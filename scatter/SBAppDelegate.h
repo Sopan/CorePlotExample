@@ -2,16 +2,21 @@
 //  SBAppDelegate.h
 //  scatter
 //
-//  Created by Kripa on 22/08/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Sopan Shekhar Sharma. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface SBAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+@interface SBAppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate>
 
+/*! @property UIWindow *window
+ @brief An object of UIWindow.
+ */
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) UITabBarController *tabBarController;
+/*! @property CPTGraphHostingView *hostView
+ @brief An object of UINavigationController.
+ */
+@property (strong, nonatomic) UINavigationController *tabBarController;
 
 @end
